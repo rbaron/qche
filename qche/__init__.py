@@ -1,1 +1,1 @@
-from qche import *
+from .qche import *

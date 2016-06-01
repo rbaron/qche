@@ -1,8 +1,9 @@
 # coding: utf-8
+import cPickle as pickle
 import json
 import logging
 import os
-import cPickle
+import sys
 
 
 class BaseQche(object):
@@ -110,4 +111,4 @@ class JsonCache(FilesystemPersistedCache):
 class PickleCache(FilesystemPersistedCache):
     @property
     def serializer(self):
-        return cPickle
+        return pickle
